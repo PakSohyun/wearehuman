@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+KR:wght@300;500&family=Playfair+Display:wght@400;500&display=swap');
+
+*{font-family: 'Lato','Noto Sans KR'; color: #141414; letter-spacing: -1.2px;}
+#serif{font-family: 'Playfair Display', serif; letter-spacing: 0px;}
