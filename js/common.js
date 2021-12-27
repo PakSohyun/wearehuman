@@ -82,7 +82,7 @@ function main(){
         $(".video_wrap").addClass("active");
         setTimeout(function(){
             $video.play();
-        },1500)
+        },1200)
     });
     $(".video_wrap .video").click(function(){
         $(".video_wrap").removeClass("active");
