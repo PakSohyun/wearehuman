@@ -77,16 +77,16 @@ function main(){
     var $index = parseInt(Math.random()*4)+1;
     $("main .img_box img").attr("src","images/main_0" + $index + ".jpg");
 
+    var $video = $("video").get(0);
     $("main .tit").click(function(){
         $(".video_wrap").addClass("active");
-        var $video = $("video").get(0);
         setTimeout(function(){
             $video.play();
         },1800)
     });
     $(".video_wrap .video").click(function(){
         $(".video_wrap").removeClass("active");
-        $video.peuse();
+        $video.pause();
     });
 }
 
