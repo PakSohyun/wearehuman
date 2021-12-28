@@ -75,11 +75,13 @@ function main(){
     var $video = $("video").get(0);
     $("main .tit").click(function(){
         $(".video_wrap").addClass("active");
+        $("body").css("overflow-y","hidden");
         setTimeout(function(){
             $video.play();
         },1200)
     });
     $(".video_wrap .video").click(function(){
+        $("body").css("overflow-y","scroll"); 
         $(".video_wrap").removeClass("active");
         $video.pause();
     });
