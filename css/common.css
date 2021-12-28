@@ -1,14 +1,13 @@
 *{box-sizing: border-box;}
 html, body{height: 100%;}
 html{font-size: 62.5%;}
+body{background-color: #fff;}
 .inner{width: 1720px; margin: 0 auto;}
 
 /* cursor */
 *{cursor: url("../images/cursor.cur")20 20, auto;}
-main .tit h3:hover{cursor: url("../images/cursor_view.cur")20 20, auto;}
-main .video_wrap video:hover{cursor: url("../images/cursor_back.cur")20 20, auto;}
-.result .slide_wrap .swiper img{cursor: url("../images/cursor_view.cur")20 20, auto;}
-.result .slide_view img{cursor: url("../images/cursor_back.cur")20 20, auto;}
+main .tit h3,.result .slide_wrap .swiper img,.result .slide_wrap .swiper img, .practice ul li.active img{cursor: url("../images/cursor_view.cur")60 60, auto;}
+main .video_wrap video:hover,.result .slide_view img{cursor: url("../images/cursor_back.cur")60 60, auto;}
 
 header{position: fixed; z-index: 999; width: 100%; padding: 80px 0 0;}
 header.active{mix-blend-mode: difference;}
@@ -100,32 +99,33 @@ nav.active p{opacity: 1;}
 .cause ul li .right p:nth-child(2){margin-top: 3.2rem;}
 
 .practice{margin-bottom: 12.0rem;}
-.practice .inner{padding: 0 14.8rem;}
-.practice ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.practice .inner{position: relative; padding: 0 14.8rem; display: flex; justify-content: space-between;}
+.practice ul{display: flex; flex-direction: column;}
 .practice ul li{width: 684px; margin-bottom: 12.0rem; transform: translateY(100px); transition-duration: 0.6s; opacity: 0;}
 .practice ul li.active{transform: translateY(0px); opacity: 1;}
-.practice ul li figure{}
 .practice ul li figure .img_wrap{position: relative; margin-bottom: 3.2rem;}
 .practice ul li figure .img_wrap .img_box{display: flex; justify-content: center;}
 .practice ul li figure .img_wrap .img_box .basic{width: 684px; height: 360px; background-color: #646464; transition-duration: 0.5s;}
 .practice ul li figure .img_wrap .img_box .basic img{width: 684px; height: 360px; object-fit: cover; transition-duration: 0.5s;}
 .practice ul li figure .img_wrap .img_box .hover{position: absolute; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0);transition-duration: 0.5s; opacity: 0;}
-.practice ul li figure .img_wrap .img_box .hover img{}
 .practice ul li figure .img_wrap > img{position: absolute; top: 0px; left: 50%; transform: translateX(-50%); z-index: -1; transition-duration: 0.5s; opacity: 0;}
-.practice ul li figure figcaption{}
 .practice ul li figure figcaption dl{padding: 0; transition-duration: 0.5s;}
 .practice ul li figure figcaption dl dt{margin-bottom: 0.8rem; font-size: 2.8rem; font-weight: 500;}
 .practice ul li figure figcaption dl dd{color: #646464; font-size: 1.6rem; font-weight: 300; letter-spacing: -0.8px;}
-
 .practice ul li:hover figure .img_wrap .img_box .basic{width: 520px; height: 360px;}
 .practice ul li:hover figure .img_wrap .img_box .basic img{width: 520px; height: 360px; opacity: 0.5;}
 .practice ul li:hover figure .img_wrap > img{top: -70px; opacity: 1;}
 .practice ul li:hover figure .img_wrap .img_box .hover{opacity: 1;}
 .practice ul li:hover figure figcaption dl{padding: 0 8.2rem;}
+.practice .last_ul{margin-top: 28.3rem;}
+.practice p{position: absolute; top: 0rem; right: 34.6rem; font-size: 1.6rem; font-weight: 300; line-height: 2.4rem; transition-duration: 0.6s; opacity: 0;}
+.practice p.active{opacity: 1;}
 
 .rolling{overflow: hidden;}
 .rolling .rolling_wrap{display: flex; margin-bottom: 12.0rem; animation: rolling 20s linear infinite;}
-.rolling .rolling_wrap ul{display: flex; align-items: center; }
-.rolling .rolling_wrap ul li{margin: 0 2.0rem;}
+.rolling .rolling_wrap ul{display: flex; align-items: center;}
+.rolling .rolling_wrap ul li{display: inline-block; margin: 0 2.0rem;}
+.rolling .rolling_wrap ul li:nth-child(2n-1){width: 344px;}
+.rolling .rolling_wrap ul li:nth-child(2n){width: 16px;}
 .rolling .rolling_wrap ul li span{display: inline-block; width: 16px; height: 16px; border-radius: 16px; background-color: #285aa0;}
 @keyframes rolling{0%{transform: translateX(0%);} 100%{transform: translateX(-50%);}}
