@@ -86,7 +86,7 @@ nav.active p{opacity: 1;}
 .cause ul li:nth-child(3) .left .img_wrap span{bottom: 0px; right: 0px; width: 0px; height: 0px;}
 .cause ul li:nth-child(1) .left.active .img_wrap span{top: 200px; left: -92px; width: 1288px; height: 240px;}
 .cause ul li:nth-child(2) .left.active .img_wrap span{top: 160px; left: 240px; width: 480px; height: 400px;}
-.cause ul li:nth-child(3) .left.active .img_wrap span{bottom: 0px; right: 0px; width: 760px; height: 360px;}
+.cause ul li:nth-child(3) .left.active .img_wrap span{bottom: 50px; right: 0px; width: 760px; height: 320px;}
 .cause ul li .left .img_wrap span:after{content: ''; clear: both; position: absolute; display: inline-block; width: 208px; height: 32px; background: url(../images/logo_w.png) no-repeat left top;}
 .cause ul li:nth-child(1) .left .img_wrap span:after{top: 32px; left: 32px;}
 .cause ul li:nth-child(2) .left .img_wrap span:after{top: 32px; left: 32px;}
