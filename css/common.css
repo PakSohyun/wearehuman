@@ -70,7 +70,7 @@ nav.active p{opacity: 1;}
 .result .slide_wrap .result_slide .swiper-wrapper .swiper-slide:hover  > .img_box{display: none;}
 
 
-.cause{position: relative; padding: 18.0rem 0 36.0rem;}
+.cause{position: relative; padding: 18.0rem 0 32.0rem;}
 .cause ul li{display: flex;}
 .cause ul li .left{width: 1275px; border-right: 2px solid #141414; padding: 18.0rem 0 18.0rem;}
 .cause ul li .left .tit p{margin-bottom: 4.8rem; font-size: 3.2rem; font-weight: 500; transition-duration: 0.8s; transform: translateY(80px); opacity: 0;}
