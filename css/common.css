@@ -70,15 +70,15 @@ nav.active p{opacity: 1;}
 .result .slide_wrap .result_slide .swiper-wrapper .swiper-slide:hover  > .img_box{display: none;}
 
 
-.cause{position: relative; padding: 18.0rem 0 32.0rem;}
+.cause{position: relative; padding: 16.0rem 0 32.0rem;}
 .cause ul li{display: flex;}
-.cause ul li .left{width: 1275px; border-right: 2px solid #141414; padding: 18.0rem 0 18.0rem;}
+.cause ul li .left{width: 1275px; border-right: 2px solid #141414; padding: 16.0rem 0 16.0rem;}
 .cause ul li .left .tit p{margin-bottom: 4.8rem; font-size: 3.2rem; font-weight: 500; transition-duration: 0.8s; transform: translateY(80px); opacity: 0;}
 .cause ul li .left.active .tit p{transform: translateY(0px); opacity: 1;}
 .cause ul li .left .tit p span{color: #285aa0;}
 .cause ul li .left .tit h4{font-size: 7.0rem; font-weight: 500; transition-delay: 0.4s; transition-duration: 0.8s; transform: translateY(80px); opacity: 0;}
 .cause ul li .left.active .tit h4{transform: translateY(0px); opacity: 1;}
-.cause ul li .left .img_wrap{position: relative; margin-top: 12.0rem;}
+.cause ul li .left .img_wrap{position: relative; margin-top: 16.0rem;}
 .cause ul li:nth-child(2) .left .img_wrap{margin-top: -4.0rem;}
 .cause ul li .left .img_wrap span{position: absolute; display: inline-block; background-color: #285aa0; mix-blend-mode: multiply; transition-delay: 1.6s; transition-duration: 0.8s;}
 .cause ul li:nth-child(1) .left .img_wrap span{top: 200px; left: -92px; width: 0px; height: 0px;}
@@ -93,15 +93,15 @@ nav.active p{opacity: 1;}
 .cause ul li:nth-child(3) .left .img_wrap span:after{bottom: 32px; left: 32px;}
 .cause ul li .left .img_wrap .img_box{display: block; text-align: center;}
 .cause ul li .left .img_wrap .img_box img{max-width: 100%;}
-.cause ul li .right{width: 445px; padding: 18.0rem 0 18.0rem 5.6rem;}
+.cause ul li .right{width: 445px; padding: 16.0rem 0 16.0rem 5.6rem;}
 .cause ul li .right p{font-size: 2.0rem; font-weight: 300; line-height: 3.0rem; word-break: keep-all; transition-delay: 1.0s; transition-duration: 0.8s; transform: translateY(80px); opacity: 0;}
 .cause ul li .right.active p{transform: translateY(0px); opacity: 1;}
 .cause ul li .right p:nth-child(2){margin-top: 3.2rem;}
 
-.practice{margin-bottom: 12.0rem;}
+.practice{margin-bottom: 16.0rem;}
 .practice .inner{position: relative; padding: 0 14.8rem; display: flex; justify-content: space-between;}
 .practice ul{display: flex; flex-direction: column;}
-.practice ul li{width: 684px; margin-bottom: 12.0rem; transform: translateY(100px); transition-duration: 0.6s; opacity: 0;}
+.practice ul li{width: 684px; margin-bottom: 16.0rem; transform: translateY(100px); transition-duration: 0.6s; opacity: 0;}
 .practice ul li.active{transform: translateY(0px); opacity: 1;}
 .practice ul li figure .img_wrap{position: relative; margin-bottom: 3.2rem;}
 .practice ul li figure .img_wrap .img_box{display: flex; justify-content: center;}
@@ -122,7 +122,7 @@ nav.active p{opacity: 1;}
 .practice p.active{opacity: 1;}
 
 .rolling{overflow: hidden;}
-.rolling .rolling_wrap{display: flex; margin-bottom: 12.0rem; animation: rolling 20s linear infinite;}
+.rolling .rolling_wrap{display: flex; margin-bottom: 16.0rem; animation: rolling 20s linear infinite;}
 .rolling .rolling_wrap ul{display: flex; align-items: center;}
 .rolling .rolling_wrap ul li{display: inline-block; margin: 0 2.0rem;}
 .rolling .rolling_wrap ul li:nth-child(2n-1){width: 344px;}
