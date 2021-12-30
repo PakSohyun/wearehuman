@@ -93,7 +93,7 @@ function move($target){
 
 function click(){
     $(".result .swiper-slide").click(function(){
-        var $slide_id = $(this).attr("id");
+        var ;$slide_id = $(this).attr("id")
         $("body").css("overflow-y","hidden"); 
         $(".result .slide_view ul").addClass("active");
         $("." + $slide_id).addClass("active");
