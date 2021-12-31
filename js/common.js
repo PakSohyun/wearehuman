@@ -5,8 +5,8 @@ $(document).ready(function(){
     main();
     move($("main .tit"));
     move($("main .img_box"));
-    click();
     swiper();
+    slideClick();
 });
 
 function cursor(){
@@ -91,22 +91,6 @@ function move($target){
     $($target).addClass("active");
 }
 
-function click(){
-    $(".result .swiper-slide").click(function(){
-        var $slide_id = $(this).attr("id")
-        $("body").css("overflow-y","hidden"); 
-        $(".result .slide_view ul").addClass("active");
-        $("." + $slide_id).addClass("active");
-        
-        $("." + $slide_id).click(function(){
-            $("body").css("overflow-y","scroll"); 
-            $(".result .slide_view ul").removeClass("active");
-            $("." + $slide_id).removeClass("active");
-            
-        }); 
-    }); 
-}
-
 function swiper(){
     var swiper = new Swiper(".result_slide", {
         slidesPerView: 3,
@@ -118,6 +102,23 @@ function swiper(){
         disableOnInteraction: false,
     },
 });  
+}
+
+function slideClick(){
+    $(".result .swiper-slide").click(function(){
+        var $slide_id = $(this).attr("id")
+        console.log($slide_id);
+        $("body").css("overflow-y","hidden"); 
+        $(".result .slide_view ul").addClass("active");
+        $("." + $slide_id).addClass("active");
+        
+        $("." + $slide_id).click(function(){
+            $("body").css("overflow-y","scroll"); 
+            $(".result .slide_view ul").removeClass("active");
+            $("." + $slide_id).removeClass("active");
+            
+        }); 
+    }); 
 }
 
 function rolling(){  
