@@ -38,7 +38,7 @@ function scroll_init(){
     scroll(".practice p",0.94);
 }
 
-function scroll($target,$time){ 
+function scroll($target,$numb){ 
     $(window).scroll(function(){
         var $top = $(window).scrollTop();
         if($top > 0){
@@ -49,11 +49,17 @@ function scroll($target,$time){
             $("header").css("mix-blend-mode","");
         };
         
-        var offsetTop = ($($target).offset().top)*$time;
+        var offsetTop = ($($target).offset().top)*$numb;
         if(offsetTop < $top){
             $($target).addClass("active");
         }else{
             $($target).removeClass("active");
+        };
+        
+        if(($(".cause .cause_01 .left").offset().top)*0.95 < $top && ($(".practice").offset().top)*0.95 > $top){
+            $("header").css("opacity",0);
+        }else{
+            $("header").css("opacity",1);
         };
 
         var $result_offsetTop = $(".result").offset().top;
