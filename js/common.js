@@ -80,6 +80,7 @@ function main(){
     
     var $video = $("video").get(0);
     $("main .tit").click(function(){
+        $("html").animate({scrollTop:0},300);
         $(".video_wrap").addClass("active");
         $("body").css("overflow-y","hidden");
         setTimeout(function(){
