@@ -9,7 +9,7 @@ body{background-color: #fff;}
 main .tit h3,.result .slide_wrap .swiper img,.result .slide_wrap .swiper img, .practice ul li.active img{cursor: url("../images/cursor_view.cur")60 60, auto;}
 main .video_wrap video:hover,.result .slide_view img{cursor: url("../images/cursor_back.cur")60 60, auto;}
 
-header{position: fixed; z-index: 999; width: 100%; padding: 80px 0 0;}
+header{position: fixed; z-index: 999; width: 100%; padding: 80px 0 0; transition-duration: 0.4s;}
 header.active{mix-blend-mode: difference;}
 header h1 a{display: inline-block; font-size: 0;}
 header h1 a span{display: inline-block; text-indent: -99999px;}
