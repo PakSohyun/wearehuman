@@ -25,20 +25,20 @@ function cursor(){
 
 function scroll_init(){
     for(var i = 1; i < 10; i++){
-        scroll(".practice .first_ul li:nth-child("+ i +")",0.94);
-        scroll(".practice .last_ul li:nth-child("+ i +")",0.94);
+        mouseScroll(".practice .first_ul li:nth-child("+ i +")");
+        mouseScroll(".practice .last_ul li:nth-child("+ i +")");
     }    
-    scroll("nav",0.4);
-    scroll(".cause .cause_01 .left",0.95);
-    scroll(".cause .cause_02 .left",0.95);
-    scroll(".cause .cause_03 .left",0.95);
-    scroll(".cause .cause_01 .right",0.95);
-    scroll(".cause .cause_02 .right",0.95);
-    scroll(".cause .cause_03 .right",0.95);
-    scroll(".practice p",0.94);
+    mouseScroll("nav",0.4);
+    mouseScroll(".cause .cause_01 .left");
+    mouseScroll(".cause .cause_02 .left");
+    mouseScroll(".cause .cause_03 .left");
+    mouseScroll(".cause .cause_01 .right");
+    mouseScroll(".cause .cause_02 .right");
+    mouseScroll(".cause .cause_03 .right");
+    mouseScroll(".practice p");
 }
 
-function scroll($target,$numb){ 
+function mouseScroll($target){ 
     $(window).scroll(function(){
         var $top = $(window).scrollTop();
         if($top > 0){
@@ -49,14 +49,14 @@ function scroll($target,$numb){
             $("header").css("mix-blend-mode","");
         };
         
-        var offsetTop = ($($target).offset().top)*$numb;
+        var offsetTop = ($($target).offset().top)-500;
         if(offsetTop < $top){
             $($target).addClass("active");
         }else{
             $($target).removeClass("active");
         };
         
-        if(($(".cause .cause_01 .left").offset().top)*0.95 < $top && ($(".practice").offset().top)*0.95 > $top){
+        if(($(".cause .cause_01 .left").offset().top)-500 < $top && ($(".practice").offset().top)-500 > $top){
             $("header").css("opacity",0);
         }else{
             $("header").css("opacity",1);
@@ -64,7 +64,7 @@ function scroll($target,$numb){
 
         var $result_offsetTop = $(".result").offset().top;
         var $height = $(".result").innerHeight();
-        var $start = $result_offsetTop*0.7;
+        var $start = $result_offsetTop-500;
         var $end = ($result_offsetTop + $height)*0.9;
         if($top < $end & $top > $start){
             $(".result").css("background-color","#141414");
